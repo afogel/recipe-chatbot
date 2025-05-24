@@ -73,7 +73,7 @@ recipe-chatbot/
 
 3.  **Install Dependencies**
     ```bash
-    pip install -r requirements.txt
+    uv sync
     ```
 
 4.  **Configure Environment Variables (`.env` file)**
@@ -113,7 +113,7 @@ recipe-chatbot/
 *   Ensure your virtual environment is activated and your `.env` file is configured.
 *   From the project root directory, start the FastAPI server using Uvicorn:
     ```bash
-    uvicorn backend.main:app --reload
+    uv run fastapi dev backend/main.py --port 8080
     ```
 *   Open your web browser and navigate to: `http://127.0.0.1:8000`
 
